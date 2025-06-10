@@ -25,12 +25,12 @@ Password: demo123
 Upon successful login, you’ll be redirected to the patient list page.
 3. View and Search Patients
 
-The patient list page (http://127.0.0.1:8000/) displays all patients in a table.
+The patient list page displays all patients in a table.
 Use the search bar to filter patients by their full name (e.g., search for "Aarav" to find Aarav Sharma).
 
 4. Add a New Patient
 
-Click the "Add Patient" button on the patient list page to navigate to the add patient form (http://127.0.0.1:8000/add/).
+Click the "Add Patient" button on the patient list page to navigate to the add patient form.
 Fill in the details (full name, age, gender, insurance provider, policy number) and submit the form.
 You’ll be redirected back to the patient list, where the new patient will appear.
 
