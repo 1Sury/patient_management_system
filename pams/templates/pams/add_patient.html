@@ -1,0 +1,34 @@
+{% extends 'pams/base.html' %} {% block title %}Add Patient{% endblock %} {% block header %}Add New Patient{% endblock %} {% block content %}
+<div class="card">
+    <div class="card-header">
+        <h4>Add Patient</h4>
+    </div>
+    <div class="card-body">
+        {% if form.errors %}
+        <div class="alert alert-danger">
+            {{ form.errors }}
+        </div>
+        {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="{{ form.full_name.id_for_label }}">Full Name</label> {{ form.full_name }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.age.id_for_label }}">Age</label> {{ form.age }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.gender.id_for_label }}">Gender</label> {{ form.gender }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.insurance_provider.id_for_label }}">Insurance Provider</label> {{ form.insurance_provider }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.policy_number.id_for_label }}">Policy Number</label> {{ form.policy_number }}
+            </div>
+            <button type="submit" class="btn btn-primary">Save Patient</button>
+            <a href="{% url 'patient_list' %}" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>
+{% endblock %}
