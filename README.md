@@ -1,4 +1,5 @@
-Patient Management System
+#Patient Management System
+
 Overview
 The Patient Management System is a Django-based web application designed to manage patient records. It includes features such as user authentication, a patient list with search functionality, and the ability to add new patients. The project includes a demo login and pre-populated dummy patient data for testing purposes.
 Features
